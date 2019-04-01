@@ -3,7 +3,7 @@ $(document).ready(function(){
         $(this).attr("disabled", "disabled");
         $(".about-title").fadeOut(300, function(){
             fadeInAndOut($(".b"), 4000, function(){
-                fadeInAndOut($(".c"), 5500, function(){
+                fadeInAndOut($(".c"), 5501, function(){
                     fadeInAndOut($(".d"), 4000, function(){
                         fadeInAndOut($(".e"), 5000, function(){
                             fadeInAndOut($(".f"), 5000, function(){
