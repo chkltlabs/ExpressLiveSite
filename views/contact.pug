@@ -1,0 +1,20 @@
+extends layout
+
+block header
+    include temps/header
+    video#myVideo(autoplay='', muted='', loop='')
+        source(src='video/austin.mp4', type='video/mp4')
+block content
+    main.SDmain
+        h2.pagetitle Contact
+        p.contactinfo
+            br
+            | +1.937.218.2673
+            br
+            br
+            a.email-link(href='mailto:chkltlabs@gmail.com') ChkltLabs@Gmail.com
+            br
+            br
+            a.email-link(href='https://docs.google.com/document/d/1Ow6s1QOBQPHEGn06V042dchp2wSQ8XfkAA4gcKqa_lg/edit?usp=sharing') Resume
+block footer
+    include temps/footer

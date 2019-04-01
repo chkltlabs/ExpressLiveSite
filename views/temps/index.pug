@@ -1,0 +1,52 @@
+block content
+    .styled-select.blue.semi-square
+        select#langBox
+            option(value='js') JavaScript
+            option(value='php') PHP
+            option(value='java') Java
+    #editor.editor
+        | class Erik {
+        | constructor(){
+        | this.skills = [
+        | 'JavaScript',
+        | 'PHP',
+        | 'CSS',
+        | 'HTML',
+        | 'Java'
+        | ];
+        | this.hasDevJob = false;
+        | }
+        | get resume(){
+        | return 'contact.php';
+        | }
+        | get portfolio(){
+        | return 'portfolio.php';
+        | }
+        | get blog(){
+        | if(confirm('Are you sure you want to read these ramblings?')){
+        | return 'blog.php';
+        | }
+        | }
+        | get favoriteBeer(){
+        | if(hefeweizen){
+        | return 'Hefeweizen';
+        | } else if(craftWheatBeers){
+        | return 'Craft Wheat Beers';
+        | } else {
+        | return 'Blue Moon, I guess...';
+        | }
+        | }
+        | }
+    .frontpage
+        h1.frontname
+            | Erik V Gratz
+        ul
+            li.list Software Developer
+            li.list Acroyogi
+            li.list Craft Beer, Outer Space Enthusiast
+            li.list Over 40% ramen noodles by volume
+            li.list World Traveler
+            br
+            li.list
+                a(href='/about.php') this.enter()
+    script(src='js/index.js')
