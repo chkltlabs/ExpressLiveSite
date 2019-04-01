@@ -8,36 +8,39 @@ block content
       option(value='java') Java
   #editor.editor
     | class Erik {
-    | constructor(){
-    | this.skills = [
-    | 'JavaScript',
-    | 'PHP',
-    | 'CSS',
-    | 'HTML',
-    | 'Java'
-    | ];
-    | this.hasDevJob = false;
-    | }
-    | get resume(){
-    | return 'contact.php';
-    | }
-    | get portfolio(){
-    | return 'portfolio.php';
-    | }
-    | get blog(){
-    | if(confirm('Are you sure you want to read these ramblings?')){
-    | return 'blog.php';
-    | }
-    | }
-    | get favoriteBeer(){
-    | if(hefeweizen){
-    | return 'Hefeweizen';
-    | } else if(craftWheatBeers){
-    | return 'Craft Wheat Beers';
-    | } else {
-    | return 'Blue Moon, I guess...';
-    | }
-    | }
+    |     constructor(){
+    |         this.skills = [
+    |             'JavaScript',
+    |             'PHP',
+    |             'CSS',
+    |             'HTML',
+    |             'Java'
+    |             ];
+    |         this.hasDevJob = false;
+    |     }
+    |     get resume(){
+    |         return 'contact.php';
+    |     }
+    |
+    |     get portfolio(){
+    |         return 'portfolio.php';
+    |     }
+    |
+    |     get blog(){
+    |         if(confirm('Are you sure you want to read these ramblings?')){
+    |             return 'blog.php';
+    |         }
+    |     }
+    |
+    |     get favoriteBeer(){
+    |         if(hefeweizen){
+    |             return 'Hefeweizen';
+    |         } else if(craftWheatBeers){
+    |             return 'Craft Wheat Beers';
+    |         } else {
+    |             return 'Blue Moon, I guess...';
+    |         }
+    |     }
     | }
   .frontpage
     h1.frontname
